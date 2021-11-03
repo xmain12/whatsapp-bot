@@ -1,7 +1,7 @@
-/* Copyright (C) 2021 Stefanie-Vurus fucker.
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-STEFANIE - XMAIN
+NEOTROX - TEENUHX
 */
 
 const { Sequelize } = require('sequelize');
@@ -11,21 +11,21 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './Amazone.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
     VERSION: 'v7.3.6',
     ZRUN: "zenzapi",
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
-    BOT_NAME: process.env.BOT_NAME === undefined ? 'Queen Stefanie' : process.env.BOT_NAME,
+    BOT_NAME: process.env.BOT_NAME === undefined ? 'Amazone Alexa' : process.env.BOT_NAME,
     HNLOCK: 'hadi-api',
     ZLOCK: 'zeks',
     ZNLOCK: 'zenzapi.xyz',
     ZSITE: process.env.ZSITE === undefined ?'enzapi.xyz' : process.env.ZSITE,
     ZAPI: process.env.ZAPI === undefined ?'AMAZONE' : process.env.ZAPI,
     BSITE: process.env.BSITE === undefined ?'dapuhy-api.herokuapp.com' : process.env.BSITE,
-    BAPI: process.env.BAPI === undefined ?'TEENUU' : process.env.BAPI,
+    BAPI: process.env.BAPI === undefined ?'ALEXA-1' : process.env.BAPI,
     NS: process.env.NS === undefined ?'' : process.env.NS,
     NS: process.env.NS === undefined ?'' : process.env.NS,
     HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
@@ -52,7 +52,8 @@ module.exports = {
     TAPI11: process.env.TAPI11 === undefined ?'TEENUU10' : process.env.TAPI,
     TAPI12: process.env.TAPI12 === undefined ?'TEENUU11' : process.env.TAPI,
     TAPI13: process.env.TAPI13 === undefined ?'TEENUU12' : process.env.TAPI,
-    TAPI14: process.env.TAPI14 === undefined ?'TEENUU13' : process.env.TAPI,
+    AMAZONE_SITE: process.env.AMAZONE_SITE === undefined ?'://fzstream.techwizardent.com/' : process.env.AMAZONE_SITE,
+    AMAZONE_SITEE: process.env.AMAZONE_SITEE === undefined ?'://netfile2link.herokuapp.com/' : process.env.AMAZONE_SITEE,
     TAPI15: process.env.TAPI15 === undefined ?'TEENUU14' : process.env.TAPI,
     TAPI16: process.env.TAPI16 === undefined ?'TEENUU15' : process.env.TAPI,
     HACKER: process.env.HACKER === undefined ?'h4ck3rs404' : process.env.HACKER,
@@ -66,12 +67,12 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    ON: "hunter",
+    ONE: "hunter",
     CCN: "Ikyy69",
     ON: "hunter",
     HLOCK: "hadi-api",
     ZTH: "d537895142",
-    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    DATABASE: DATABASE_URL === './Amazone.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ?'rjVLfqfPmpytoDDqvGt7kRbx' : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
